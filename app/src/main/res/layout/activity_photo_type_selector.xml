@@ -3,8 +3,8 @@
     android:id="@+id/spinner_photo_type"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="12dp"
+    android:layout_margin="@dimen/_12sdp"
     android:background="@drawable/spinner_background"
-    android:padding="12dp"
+    android:padding="@dimen/_12sdp"
     android:popupBackground="@android:drawable/dialog_holo_light_frame"
     android:spinnerMode="dropdown" />
