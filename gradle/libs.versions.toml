@@ -10,6 +10,8 @@ mlkit-face = "16.1.6"
 junit = "4.13.2"
 androidx-junit = "1.1.5"
 espresso-core = "3.5.1"
+sdp = "1.0.6"
+ssp = "1.0.6"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -27,3 +29,5 @@ mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", ve
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-junit" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+sdp-android = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
+ssp-android = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp" }

@@ -56,6 +56,10 @@ dependencies {
     // ML Kit Face Detection
     implementation(libs.mlkit.face.detection)
 
+    // Responsive UI
+    implementation(libs.sdp.android)
+    implementation(libs.ssp.android)
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

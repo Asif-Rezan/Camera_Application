@@ -9,8 +9,6 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 
-
-
 class OverlayFrameView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
