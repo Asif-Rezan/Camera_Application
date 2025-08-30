@@ -1,6 +1,5 @@
 package com.asifrezan.camera_application.ui
 
-
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
@@ -21,7 +20,6 @@ import com.asifrezan.camera_application.models.PhotoType
 import com.asifrezan.camera_application.utils.ImageSaver
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-
 
 
 class CameraActivity : AppCompatActivity() {
@@ -120,7 +118,8 @@ class CameraActivity : AppCompatActivity() {
                 }
 
                 override fun onError(exc: ImageCaptureException) {
-                    Toast.makeText(this@CameraActivity, "Error saving photo", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@CameraActivity, "Error saving photo", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
         )

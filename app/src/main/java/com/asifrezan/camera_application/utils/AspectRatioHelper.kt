@@ -2,7 +2,6 @@ package com.asifrezan.camera_application.utils
 
 import com.asifrezan.camera_application.models.PhotoType
 
-
 object AspectRatioHelper {
     fun getAspectRatio(photoType: PhotoType): Pair<Int, Int> {
         return when (photoType) {

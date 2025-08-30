@@ -25,18 +25,26 @@ class PhotoTypeSelector @JvmOverloads constructor(
     }
 
     fun setItems(items: List<PhotoType>) {
-        val adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, items.map { it.name })
+        val adapter =
+            ArrayAdapter(context, android.R.layout.simple_spinner_item, items.map { it.name })
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
     }
 
     fun setOnItemSelectedListener(listener: (position: Int, item: PhotoType) -> Unit) {
         this.listener = listener
-        spinner.onItemSelectedListener = object : android.widget.AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: android.widget.AdapterView<*>?, view: android.view.View?, position: Int, id: Long) {
-                listener.invoke(position, PhotoType.values()[position])
+        spinner.onItemSelectedListener =
+            object : android.widget.AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    parent: android.widget.AdapterView<*>?,
+                    view: android.view.View?,
+                    position: Int,
+                    id: Long
+                ) {
+                    listener.invoke(position, PhotoType.values()[position])
+                }
+
+                override fun onNothingSelected(parent: android.widget.AdapterView<*>?) {}
             }
-            override fun onNothingSelected(parent: android.widget.AdapterView<*>?) {}
-        }
     }
 }
